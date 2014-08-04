@@ -1,5 +1,10 @@
 This is a [Dockerized][] [Celery][]-based web service that converts
-YouTube videos to mp3s.
+YouTube videos to mp3s and uploads them to S3.
+
+Since this is partly done as an excuse to learn about Docker and
+asynchronous task queues, it is probably bereft of best practices.
+
+**IT ALSO DOES NOT CURRENTLY WORK.** Use at your own risk.
 
 ## Quick Start
 
