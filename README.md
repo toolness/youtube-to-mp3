@@ -1,4 +1,4 @@
-This is a [Dockerized][] [Celery][]-based web service that converts
+This is a [Dockerized][] [Celery][] service that converts
 YouTube videos to mp3s and uploads them to S3.
 
 Since this is partly done as an excuse to learn about Docker and
@@ -15,14 +15,14 @@ cp .env.sample .env
 
 Then edit `.env` as needed and run `make run`.
 
-## Calling the Web Service
+## Calling the Service
 
 Just call the `yt2mp3.tasks.convert` task and pass it
 the YouTube URL, S3 bucket name, and S3 key id. If the task
 returns without throwing an exception, the mp3 will be available
 at the bucket and key you specified.
 
-Note that at present, the web service will only accept JSON-serialized
+Note that at present, the service will only accept JSON-serialized
 tasks.
 
 ## Development
