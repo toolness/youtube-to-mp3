@@ -4,4 +4,4 @@ RUN printf '\ndeb http://us.archive.ubuntu.com/ubuntu/ trusty multiverse' >> /et
 RUN printf '\ndeb http://us.archive.ubuntu.com/ubuntu/ trusty-updates multiverse' >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y libav-tools libavcodec-extra-54 python python-pip python-dev redis-server
-RUN pip install --upgrade youtube_dl celery[librabbitmq,redis]
+RUN pip install --upgrade youtube_dl celery[librabbitmq,redis] boto
