@@ -15,6 +15,16 @@ cp .env.sample .env
 
 Then edit `.env` as needed and run `make run`.
 
+## Calling the Web Service
+
+Just call the `yt2mp3.tasks.convert` task and pass it
+the YouTube URL, S3 bucket name, and S3 key id. If the task
+returns without throwing an exception, the mp3 will be available
+at the bucket and key you specified.
+
+Note that at present, the web service will only accept JSON-serialized
+tasks.
+
 ## Development
 
 To develop the service, run `make develop`.
